@@ -1,52 +1,56 @@
-import { ExternalLink, Github, ArrowRight } from "lucide-react"
-import Image from "next/image"
+import { Simnyx, Zebec, ZebecCard, ZebecStake } from "@/public/projects";
+import { ExternalLink, Github, ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
+    title: "Zebec Network",
     description:
-      "A full-stack e-commerce solution built with Next.js, Stripe, and PostgreSQL. Features include user authentication, product management, and order processing.",
-    image: "/placeholder.svg?height=300&width=400",
-    technologies: ["Next.js", "TypeScript", "PostgreSQL", "Stripe", "Tailwind CSS"],
-    liveUrl: "#",
-    githubUrl: "#",
+      "Zebec Network is a decentralized infrastructure platform designed to enable real-time, on-chain payments and seamless value transfer. The ecosystem supports businesses, individuals, and investors by providing instant access to funds and tokens, eliminating delays and reducing reliance on traditional financial intermediaries.",
+    image: Zebec,
+    technologies: ["Next.js", "TypeScript", "Web3.js", "Tailwind CSS", "Redux"],
+    liveUrl: "https://app.zebec.io/",
+    githubUrl: "",
     featured: true,
   },
   {
-    title: "Task Management App",
+    title: "Zebec Cards",
     description:
-      "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-    image: "/placeholder.svg?height=300&width=400",
-    technologies: ["React", "Node.js", "Socket.io", "MongoDB", "Material-UI"],
-    liveUrl: "#",
-    githubUrl: "#",
+      "A responsive web portal built for Zebec Card users to manage and monitor their crypto debit cards. The platform enables users to activate cards, view transaction history, check balances, and manage account details securely. ",
+    image: ZebecCard,
+    technologies: ["Next.js", "TypeScript", "Web3.js", "Tailwind CSS", "Redux"],
+    liveUrl: "https://card.zebec.io",
+    githubUrl: "",
     featured: true,
   },
   {
-    title: "Weather Dashboard",
+    title: "Zebec Staking",
     description:
-      "A responsive weather dashboard that displays current conditions and forecasts using multiple weather APIs with beautiful data visualizations.",
-    image: "/placeholder.svg?height=300&width=400",
-    technologies: ["Vue.js", "Chart.js", "Weather API", "CSS3", "JavaScript"],
-    liveUrl: "#",
-    githubUrl: "#",
+      "Zebec Stake is a secure and user-friendly staking platform that allows users to stake their $ZBCN tokens and earn passive rewards through an Annual Percentage Yield (APY).",
+    image: ZebecStake,
+    technologies: ["Next.js", "TypeScript", "Web3.js", "Tailwind CSS", "Redux"],
+    liveUrl: "https://stake.zebec.io",
+    githubUrl: "",
     featured: false,
   },
   {
-    title: "Social Media Analytics",
+    title: "Simnyx",
     description:
-      "A comprehensive analytics dashboard for social media metrics with data visualization, reporting features, and automated insights.",
-    image: "/placeholder.svg?height=300&width=400",
-    technologies: ["React", "D3.js", "Python", "FastAPI", "Redis"],
-    liveUrl: "#",
-    githubUrl: "#",
+      "Simnyx is a professional IT training institute based in Nepal, offering both in-person and online courses in web development, software engineering, programming, hardware, and networking. The platform is designed to support learners through hands-on project work, performance evaluations, and career placement assistance.",
+    image: Simnyx,
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Redux"],
+    liveUrl: "https://www.simnyx.com",
+    githubUrl: "",
     featured: false,
   },
-]
+];
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-20 bg-gradient-to-br from-white to-gray-50 relative overflow-hidden">
+    <section
+      id="projects"
+      className="py-20 bg-gradient-to-br from-white to-gray-50 relative overflow-hidden"
+    >
       {/* Background decoration */}
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
 
@@ -56,7 +60,8 @@ export default function Projects() {
             Featured <span className="text-blue-600">Projects</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            A showcase of my recent work, demonstrating my ability to build scalable and user-friendly applications.
+            A showcase of my recent work, demonstrating my ability to build
+            scalable and user-friendly applications.
           </p>
         </div>
 
@@ -89,7 +94,9 @@ export default function Projects() {
                 <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
                   {project.title}
                 </h3>
-                <p className="text-gray-600 mb-4 leading-relaxed">{project.description}</p>
+                <p className="text-gray-600 mb-4 leading-relaxed">
+                  {project.description}
+                </p>
 
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.technologies.map((tech, i) => (
@@ -110,13 +117,15 @@ export default function Projects() {
                     <ExternalLink className="w-4 h-4" />
                     Live Demo
                   </a>
-                  <a
-                    href={project.githubUrl}
-                    className="flex items-center gap-2 px-4 py-2 border-2 border-gray-300 text-gray-700 rounded-lg hover:border-gray-900 hover:text-gray-900 transition-all duration-300 hover:scale-105 font-medium"
-                  >
-                    <Github className="w-4 h-4" />
-                    Code
-                  </a>
+                  {project.githubUrl && (
+                    <a
+                      href={project.githubUrl}
+                      className="flex items-center gap-2 px-4 py-2 border-2 border-gray-300 text-gray-700 rounded-lg hover:border-gray-900 hover:text-gray-900 transition-all duration-300 hover:scale-105 font-medium"
+                    >
+                      <Github className="w-4 h-4" />
+                      Code
+                    </a>
+                  )}
                 </div>
               </div>
 
@@ -128,15 +137,12 @@ export default function Projects() {
         </div>
 
         <div className="text-center mt-12">
-          <a
-            href="#"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-gray-900 to-gray-700 text-white rounded-full hover:from-gray-800 hover:to-gray-600 transition-all duration-300 hover:scale-105 font-medium"
-          >
-            View All Projects
-            <ArrowRight className="w-5 h-5" />
-          </a>
+          <div className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-gray-900 to-gray-700 text-white rounded-full font-medium">
+            And many more...
+            {/* <ArrowRight className="w-5 h-5" /> */}
+          </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
