@@ -6,7 +6,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Susan GHimire - Frontend Developer",
+  title: "Susan Ghimire - Frontend Developer",
   description:
     "Portfolio of Alex Johnson, a passionate Full-Stack Developer specializing in React, Next.js, and modern web technologies.",
   keywords: "Frontend Developer, React, Next.js, TypeScript, Web Development",
