@@ -38,7 +38,7 @@ export default function Education() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
-            <span className="text-blue-600">Education</span>
+            <span className="">Education</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
             My academic background and qualifications
