@@ -1,4 +1,4 @@
-import { Aabiskar, Jabir, Raghib, Sagar } from "@/public/testimonials/intex";
+import { Aabiskar, Jabir, Raghib, Sagar, Sudarsan } from "@/public/testimonials/intex";
 import { Quote, Star } from "lucide-react";
 import Image from "next/image";
 
@@ -37,6 +37,15 @@ const testimonials = [
     image: Aabiskar,
     content:
       "I had the pleasure of working with Susan Ghimire on multiple frontend projects. He's a skilled developer with a strong eye for detail and design, and consistently delivered clean, efficient code. Susan is a great team player—reliable, collaborative, and proactive. I highly recommend him for any frontend role.",
+    rating: 5,
+  },
+  {
+    name: "Sudarshan Timilsina",
+    role: "Junior Frontend Developer",
+    company: "Zebec HQ",
+    image: Sudarsan,
+    content:
+      "Learning under Susan, a highly skilled senior frontend engineer, has been an incredible experience. His mentorship shaped the way I think about code quality, UI architecture, and problem-solving. He has a unique ability to simplify complex frontend concepts and always encouraged me to think critically and write clean, maintainable code. His emphasis on best practices and attention to detail gave me a strong foundation in modern frontend development. Beyond technical knowledge, he instilled a mindset of continuous learning and professionalism. Thanks to his guidance, I felt confident stepping into real-world projects. Susan’s mentorship truly accelerated my growth as a frontend engineer",
     rating: 5,
   },
 ];

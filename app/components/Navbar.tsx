@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-
+import Image from "next/image";
+import Logo from "../../public/logo.png"; // Adjust the path as necessary
 const navItems = [
   { name: "About", href: "#about" },
   { name: "Experience", href: "#experience" },
@@ -41,14 +42,13 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex-shrink-0">
-            <button
-              onClick={() => scrollToSection("#about")}
-              className="text-2xl font-bold text-gray-900 hover:text-blue-600 transition-colors"
-            >
-              Susan Ghimire
-            </button>
-          </div>
+          <button
+            onClick={() => scrollToSection("#about")}
+            className=" flex items-center text-2xl font-bold text-gray-900 hover:text-blue-600 transition-colors"
+          >
+            <Image className="h-16 w-16" src={Logo} alt="susan ghimire" />
+            <div className="">Susan Ghimire</div>
+          </button>
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
