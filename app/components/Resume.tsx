@@ -25,7 +25,7 @@ export default function Resume() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-            Resume & Contact
+            Resume & <span className="text-blue-600">Contact</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Download my complete resume or get in touch to discuss

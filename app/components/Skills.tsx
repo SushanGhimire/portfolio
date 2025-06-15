@@ -1,8 +1,8 @@
 import Image from "next/image";
-
+import apollo from "../../public/tech Logos/apollo.svg";
 const skillCategories = [
   {
-    title: "Tech Stack",
+    title: "Tech Stacks",
     skills: [
       {
         name: "React",
@@ -34,7 +34,8 @@ const skillCategories = [
       },
       {
         name: "Apollo GraphQL",
-        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
+        logo: apollo,
+        // logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
       },
     ],
   },
@@ -85,6 +86,14 @@ const skillCategories = [
       {
         name: "VS Code",
         logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+      },
+      {
+        name: "Postman",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
+      },
+      {
+        name: "Jira",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg",
       },
       {
         name: "Linux",

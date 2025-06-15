@@ -1,4 +1,11 @@
-import { Aabiskar, Jabir, Raghib, Sagar, Sudarsan } from "@/public/testimonials/intex";
+import {
+  Aabiskar,
+  Jabir,
+  Raghib,
+  Sagar,
+  Srijan,
+  Sudarsan,
+} from "@/public/testimonials/intex";
 import { Quote, Star } from "lucide-react";
 import Image from "next/image";
 
@@ -48,6 +55,15 @@ const testimonials = [
       "Learning under Susan, a highly skilled senior frontend engineer, has been an incredible experience. His mentorship shaped the way I think about code quality, UI architecture, and problem-solving. He has a unique ability to simplify complex frontend concepts and always encouraged me to think critically and write clean, maintainable code. His emphasis on best practices and attention to detail gave me a strong foundation in modern frontend development. Beyond technical knowledge, he instilled a mindset of continuous learning and professionalism. Thanks to his guidance, I felt confident stepping into real-world projects. Susan’s mentorship truly accelerated my growth as a frontend engineer",
     rating: 5,
   },
+  {
+    name: "Srijan Pokhrel",
+    role: "Senior Backend Engineer",
+    company: "Intelzy",
+    image: Srijan,
+    content:
+      "Working with Susan has been a consistently great experience. He’s reliable, focused, and always delivers quality work. His ability to quickly understand complex codebases and contribute meaningfully to rapid prototyping makes him a tremendous asset to any development team. Susan also excels in team communication; he’s transparent, respectful, and collaborative, which helps projects move smoothly and keeps everyone aligned. On the frontend, Susan brings strong UI/UX knowledge. His designs are intuitive and user-focused, and he consistently pays attention to the small details that make a significant difference in usability. And of course, no review would be complete without mentioning his legendary speed-eating skills. He can finish a full plate of long noodles in just 10 to 13 seconds. A rare mix of talent, speed, and style!",
+    rating: 5,
+  },
 ];
 
 export default function Testimonials() {
@@ -56,7 +72,7 @@ export default function Testimonials() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-            What People Say
+            What <span className="text-blue-600">People</span> Say
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Testimonials from managers, CEOs, and colleagues I've had the
