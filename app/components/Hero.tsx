@@ -1,6 +1,6 @@
-import { Github, Linkedin, Mail, MapPin, ArrowDown } from "lucide-react"
-import profile from "../../public/profile.jpg"
-import Image from "next/image"
+import { Github, Linkedin, Mail, MapPin, ArrowDown } from "lucide-react";
+import profile from "../../public/profile.jpg";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -15,7 +15,7 @@ export default function Hero() {
         <div className="absolute top-40 left-40 w-80 h-80 bg-pink-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"></div>
       </div>
 
-      <div className="max-w-6xl mx-auto relative z-10 pt-5">
+      <div className="max-w-6xl mx-auto relative z-10 py-16 md:py-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left animate-fade-in-up">
             <div className="`">
@@ -31,11 +31,14 @@ export default function Hero() {
             </h1>
             <p className="text-2xl sm:text-3xl text-gray-600 mb-6 font-light">
               Frontend Developer & <br />
-              <span className="text-blue-600 font-medium">I build your dream project</span>
+              <span className="text-blue-600 font-medium">
+                I build your dream project
+              </span>
             </p>
             <p className="text-lg text-gray-700 mb-8 leading-relaxed max-w-2xl">
-              Passionate about creating exceptional digital experiences with modern technologies. I specialize in React and
-              Next.js, with a keen eye for design and user experience.
+              Passionate about creating exceptional digital experiences with
+              modern technologies. I specialize in React and Next.js, with a
+              keen eye for design and user experience.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-8">
               <div className="flex items-center gap-2 text-gray-600">
@@ -97,5 +100,5 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }
