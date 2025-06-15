@@ -5,7 +5,7 @@ import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import Logo from "../../public/logo.png"; // Adjust the path as necessary
 const navItems = [
-  { name: "About", href: "#about" },
+  // { name: "About", href: "#about" },
   { name: "Experience", href: "#experience" },
   { name: "Skills", href: "#skills" },
   { name: "Projects", href: "#projects" },
@@ -39,20 +39,20 @@ export default function Navbar() {
         scrolled ? "bg-white/95 backdrop-blur-md shadow-lg" : "bg-transparent"
       }`}
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-14">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <button
             onClick={() => scrollToSection("#about")}
-            className=" flex items-center text-2xl font-bold text-gray-900 hover:text-blue-600 transition-colors"
+            className=" flex items-center text-2xl md:text-xl lg:text-2xl font-bold text-gray-900 hover:text-blue-600 transition-colors"
           >
             <Image className="h-16 w-16" src={Logo} alt="susan ghimire" />
-            <div className="">Susan Ghimire</div>
+            <div className="flex-shrink-0">Susan Ghimire</div>
           </button>
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+            <div className="ml-10 flex items-baseline space-x-4 lg:space-x-8">
               {navItems.map((item) => (
                 <button
                   key={item.name}
