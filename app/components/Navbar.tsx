@@ -5,7 +5,7 @@ import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import Logo from "../../public/logo.png"; // Adjust the path as necessary
 const navItems = [
-  { name: "About", href: "#about" },
+  // { name: "About", href: "#about" },
   { name: "Experience", href: "#experience" },
   { name: "Skills", href: "#skills" },
   { name: "Projects", href: "#projects" },
@@ -44,15 +44,15 @@ export default function Navbar() {
           {/* Logo */}
           <button
             onClick={() => scrollToSection("#about")}
-            className=" flex items-center text-2xl font-bold text-gray-900 hover:text-blue-600 transition-colors"
+            className=" flex items-center text-2xl md:text-xl lg:text-2xl font-bold text-gray-900 hover:text-blue-600 transition-colors"
           >
             <Image className="h-16 w-16" src={Logo} alt="susan ghimire" />
-            <div className="">Susan Ghimire</div>
+            <div className="flex-shrink-0">Susan Ghimire</div>
           </button>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+          <div className="hidden md:block">
+            <div className="ml-10 flex items-baseline space-x-4 lg:space-x-8">
               {navItems.map((item) => (
                 <button
                   key={item.name}
@@ -67,7 +67,7 @@ export default function Navbar() {
           </div>
 
           {/* Mobile menu button */}
-          <div className="lg:hidden">
+          <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-gray-700 hover:text-blue-600 p-2"
@@ -84,7 +84,7 @@ export default function Navbar() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="lg:hidden">
+          <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-white/95 backdrop-blur-md rounded-lg mt-2 shadow-lg">
               {navItems.map((item) => (
                 <button
