@@ -56,12 +56,10 @@ export default function Education() {
                 <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
                   {/* University Logo */}
                   <div className="flex-shrink-0">
-                    <div className="w-24 h-24 bg-gray-50 rounded-full p-4 flex items-center justify-center hover:scale-105 transition-transform duration-300">
+                    <div className="w-28 h-28 bg-gray-50 rounded-full p-4 flex items-center justify-center hover:scale-105 transition-transform duration-300">
                       <Image
                         src={edu.logo || "/placeholder.svg"}
                         alt={edu.school}
-                        width={64}
-                        height={64}
                         className="object-contain"
                       />
                     </div>
