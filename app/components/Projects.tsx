@@ -112,6 +112,7 @@ export default function Projects() {
                   <div className="flex gap-4">
                     <a
                       href={project.liveUrl}
+                      target="_blank"
                       className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 hover:scale-105 font-medium"
                     >
                       <ExternalLink className="w-4 h-4" />
@@ -138,10 +139,14 @@ export default function Projects() {
         </div>
 
         <div className="text-center mt-12">
-          <div className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-gray-900 to-gray-700 text-white rounded-full font-medium">
+          <a
+            href="https://github.com/SushanGhimire"
+            target="_blank"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-gray-900 to-gray-700 text-white rounded-full font-medium"
+          >
             And many more...
             {/* <ArrowRight className="w-5 h-5" /> */}
-          </div>
+          </a>
         </div>
       </div>
     </section>

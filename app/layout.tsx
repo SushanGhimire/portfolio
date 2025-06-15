@@ -8,13 +8,13 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Susan Ghimire - Frontend Developer",
   description:
-    "Portfolio of Alex Johnson, a passionate Full-Stack Developer specializing in React, Next.js, and modern web technologies.",
+    "Passionate about creating exceptional digital experiences withmodern technologies. I specialize in React and Next.js, with a keen eye for design and user experience.",
   keywords: "Frontend Developer, React, Next.js, TypeScript, Web Development",
   authors: [{ name: "Alex Johnson" }],
   openGraph: {
     title: "Susan Ghimire - Frontend Developer",
     description:
-      "Explore the work and experience of Susan Ghimire, a skilled Full-Stack Developer with 3+ years of experience.",
+      "Explore the work and experience of Susan Ghimire, a skilled Frontend Developer with 3+ years of experience.",
     type: "website",
   },
 };
@@ -26,6 +26,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );
