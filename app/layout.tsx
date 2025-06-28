@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description:
     "Passionate about creating exceptional digital experiences withmodern technologies. I specialize in React and Next.js, with a keen eye for design and user experience.",
   keywords: "Frontend Developer, React, Next.js, TypeScript, Web Development",
-  authors: [{ name: "Alex Johnson" }],
+  authors: [{ name: "Susan Ghimire" }],
   openGraph: {
     title: "Susan Ghimire - Frontend Developer",
     description:
