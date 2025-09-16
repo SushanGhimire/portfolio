@@ -43,7 +43,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-8">
               <div className="flex items-center gap-2 text-gray-600">
                 <MapPin className="w-5 h-5" />
-                <span>Sydney, NSW, Australia</span>
+                <span>Launceston, TAS, Australia</span>
               </div>
               <div className="flex items-center gap-2 text-gray-600">
                 <Mail className="w-5 h-5" />
