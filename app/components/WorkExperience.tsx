@@ -2,6 +2,23 @@ import { Calendar, MapPin, Briefcase } from "lucide-react";
 
 const experiences = [
   {
+    title: " Frontend Engineer (React + Next)",
+    company: "Freelancing",
+    location: "Remote",
+    period: "Mar 2024 - Current",
+    achievements: [
+      `<b>End-to-End Development</b>: Independently designed, built, and deployed high-performance web applications
+for international and local clients, managing the full development lifecycle from architecture to hosting.`,
+      `<b>Bridge Finance & Mortgage</b>: Developed a custom financial services platform using Next.js and Tailwind
+CSS, featuring responsive lead-capture tools and optimized user journeys.`,
+      `<b>Simnyx</b>: Architected a corporate digital presence with a focus on clean code and reusable UI components,
+ensuring a beautifully crafted digital experience that scales efficiently.`,
+      `<b>Dhaka Topi Khaja Ghar</b>: Engineered a mobile-first restaurant platform, achieving high Lighthouse
+performance scores and implementing SEO best practices to drive local business growth.`,
+    ],
+    color: "from-purple-500 to-pink-600",
+  },
+  {
     title: "Frontend Engineer (React + Next)",
     company: "Zebec HQ",
     location: "Remote",
@@ -152,9 +169,12 @@ export default function WorkExperience() {
                                 className="flex items-start gap-3 group"
                               >
                                 <div className="w-2 h-2 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full mt-2 flex-shrink-0 group-hover:scale-150 transition-transform duration-300"></div>
-                                <span className="text-gray-700 group-hover:text-gray-900 transition-colors">
-                                  {achievement}
-                                </span>
+                                <div
+                                  className="text-gray-700 group-hover:text-gray-900 transition-colors"
+                                  dangerouslySetInnerHTML={{
+                                    __html: achievement,
+                                  }}
+                                />
                               </li>
                             ))}
                           </ul>

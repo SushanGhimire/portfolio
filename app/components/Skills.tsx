@@ -1,5 +1,8 @@
 import Image from "next/image";
 import apollo from "../../public/tech Logos/apollo.svg";
+import FramerMotion from "../../public/tech Logos/framer-motion.svg";
+import VercelDark from "../../public/tech Logos/vercel-dark-wordmark.svg";
+
 const skillCategories = [
   {
     title: "Tech Stacks",
@@ -32,6 +35,11 @@ const skillCategories = [
         name: "Redux",
         logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
       },
+      {
+        name: "Framer Motion",
+        logo: FramerMotion,
+      },
+
       {
         name: "Apollo GraphQL",
         logo: apollo,
@@ -98,6 +106,10 @@ const skillCategories = [
       {
         name: "Linux",
         logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
+      },
+      {
+        name: "Vercel",
+        logo: VercelDark,
       },
     ],
   },
