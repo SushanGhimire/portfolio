@@ -1,8 +1,15 @@
 import Image from "next/image";
 import { MapPin, Calendar } from "lucide-react";
-import { LICT, MQ, OCEM } from "@/public/edu institute";
+import { INDUS, LICT, MQ, OCEM } from "@/public/edu institute";
 
 const education = [
+  {
+    degree: "Professional Year in Information Technology",
+    school: "Indus Institute of Technology and Education",
+    address: "162 Macquarie St, Hobart, TAS",
+    completionDate: "Oct 2026",
+    logo: INDUS,
+  },
   {
     degree: "Master of Information Systems and Manamegement",
     school: "Macquarie University",
