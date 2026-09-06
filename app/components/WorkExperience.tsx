@@ -15,6 +15,7 @@ CSS, featuring responsive lead-capture tools and optimized user journeys.`,
 ensuring a beautifully crafted digital experience that scales efficiently.`,
       `<b>Dhaka Topi Khaja Ghar</b>: Engineered a mobile-first restaurant platform, achieving high Lighthouse
 performance scores and implementing SEO best practices to drive local business growth.`,
+      `Used <b>Agile-style iterative delivery</b>, GitHub-based CI/CD workflows, and unit/E2E testing fundamentals to ship quality releases on a recurring basis.`,
     ],
     color: "from-purple-500 to-pink-600",
   },
@@ -24,11 +25,12 @@ performance scores and implementing SEO best practices to drive local business g
     location: "Remote",
     period: "Feb 2022 - Mar 2024",
     achievements: [
-      "Built high-performance, scalable web applications using React.js, Next.js, TypeScript, and Tailwind CSS.",
-      "Collaborated with cross-functional teams (designers, backend, QA) to deliver seamless UI/U experiences across multiple fintech products.",
+      "Built high-performance, scalable web applications using React.js, Next.js, TypeScript, and Tailwind CSS, working within <b>Agile/Scrum</b> delivery cycles.",
+      "Collaborated with cross-functional teams (designers, backend, QA) to deliver seamless UI/UX experiences across multiple fintech products.",
+      "Integrated <b>@solana/web3.js</b>, Apollo GraphQL, and Redux Toolkit for efficient on-chain/off-chain data handling and state management.",
+      "Contributed to <b>wallet integration flows</b> (including Phantom Wallet) and frontend-side smart contract interaction.",
       "Optimised frontend performance, reducing average load time by 30% and improving Lighthouse performance scores.",
-      "Integrated Apollo GraphQL and Redux Toolkit for efficient data handling and state management.",
-      `Conducted code reviews, contributed to frontend architecture decisions, and mentored junior developers on best practices`,
+      `Conducted code reviews and <b>testing</b>, contributed to frontend architecture decisions, and mentored junior developers on best practices`,
     ],
     color: "from-blue-500 to-purple-600",
   },
@@ -38,8 +40,7 @@ performance scores and implementing SEO best practices to drive local business g
     location: "Bharatpur, Chitwan, Nepal",
     period: "Oct 2021 - Feb 2022",
     achievements: [
-      `Led the frontend development of ICAS, an enterprise-level online billing system handling annual
-      transactions of over ₹10 Crores.`,
+      `Led the frontend development of ICAS, a high-volume, enterprise-level online billing system.`,
       `Developed responsive, mobile-first UI components using React.js, HTML5, and CSS3.`,
       `Guided and mentored junior developers to follow clean code principles and implement reusable
       component patterns.`,

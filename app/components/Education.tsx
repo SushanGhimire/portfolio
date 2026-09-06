@@ -11,7 +11,7 @@ const education = [
     logo: INDUS,
   },
   {
-    degree: "Master of Information Systems and Manamegement",
+    degree: "Master of Information Systems and Management",
     school: "Macquarie University",
     address: "Macquarie Park NSW 2109",
     completionDate: "June 2025",
@@ -26,7 +26,7 @@ const education = [
   },
   {
     degree: "10+2 in Computer Science",
-    school: "Oxford Collge of Engineering and Management",
+    school: "Oxford College of Engineering and Management",
     address: "Gaindakot-2, Nawalpur, Nepal",
     completionDate: "2017",
     logo: OCEM,

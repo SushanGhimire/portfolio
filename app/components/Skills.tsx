@@ -111,6 +111,10 @@ const skillCategories = [
         name: "Vercel",
         logo: VercelDark,
       },
+       {
+        name: "Vite",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg",
+      },
     ],
   },
 ];
